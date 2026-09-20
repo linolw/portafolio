@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#090b10" />
+  <meta name="description" content="Portafolio de Leonardo Lino, Ingeniero de Software. Proyectos, tecnologías y contacto." />
+  <meta property="og:title" content="Leonardo Lino — Ingeniero de Software" />
+  <meta property="og:description" content="Portafolio personal de desarrollo de software." />
+  <meta property="og:type" content="website" />
+  <title>Leonardo Lino — Ingeniero de Software</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="page-noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">
+      <span class="brand-mark">L</span>
+      <span class="brand-text">LinoDev</span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Navegación principal">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#stack">Stack</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#certificados">Certificados</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-button" id="theme-toggle" type="button" aria-label="Cambiar tema" title="Cambiar tema">
+        <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+      </button>
+      <button class="icon-button menu-button" id="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Navegación móvil">
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#stack">Stack</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#certificados">Certificados</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">⋆⁺₊⋆ Leonardo Lino ⋆⁺₊⋆</p>
+        <h1>Ingeniero de Software</h1>
+        <p class="hero-lead">
+          Desarrollo soluciones digitales con una mirada práctica: entender el problema,
+          ordenar la idea y convertirla en un producto claro, útil y bien construido.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button primary" href="#proyectos">Ver proyectos</a>
+          <a class="button secondary" href="https://github.com/linolw" target="_blank" rel="noreferrer">
+            GitHub
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
+        </div>
+
+        <div class="hero-meta" aria-label="Información rápida">
+          <span>Lima, Perú</span>
+          <span>Desarrollo web</span>
+          <span>Producto & software</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="code-window">
+          <div class="window-bar">
+            <span></span><span></span><span></span>
+            <p>profile.ts</p>
+          </div>
+          <pre><code><span class="code-muted">const</span> <span class="code-accent">lino</span> = {
+  role: <span class="code-string">"Software Engineer"</span>,
+  focus: [
+    <span class="code-string">"web"</span>,
+    <span class="code-string">"product"</span>,
+    <span class="code-string">"software"</span>
+  ],
+  approach: <span class="code-string">"build with purpose"</span>
+};</code></pre>
+          <div class="status-line">
+            <span class="status-dot"></span>
+            <span>building / learning / improving</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split-section" id="sobre-mi">
+      <div class="section-heading reveal">
+        <p class="section-kicker">01 / Perfil</p>
+        <h2>⊹ Sobre mí ⊹</h2>
+      </div>
+      <div class="about-copy reveal">
+        <p>
+          Me interesa construir productos digitales donde la parte técnica tenga una razón clara.
+          Suelo partir del problema, ordenar requisitos y recién después llevar la solución a código.
+        </p>
+        <p>
+          Trabajo especialmente cómodo en proyectos web donde puedo combinar lógica, diseño de producto,
+          bases de datos y colaboración con Git y GitHub. Valoro las soluciones simples, entendibles y
+          que realmente mejoren la experiencia de quien las usa.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="stack">
+      <div class="section-heading reveal">
+        <p class="section-kicker">02 / Herramientas</p>
+        <h2>⊹ Tecnologías y stack ⊹</h2>
+      </div>
+
+      <div class="stack-grid">
+        <article class="stack-card reveal">
+          <p class="stack-label">✦ Lenguajes</p>
+          <div class="chip-list">
+            <span>C++</span><span>JavaScript</span><span>TypeScript</span>
+          </div>
+        </article>
+        <article class="stack-card reveal">
+          <p class="stack-label">✦ Web</p>
+          <div class="chip-list">
+            <span>HTML5</span><span>CSS3</span><span>Node.js</span>
+          </div>
+        </article>
+        <article class="stack-card reveal">
+          <p class="stack-label">✦ Datos</p>
+          <div class="chip-list">
+            <span>MongoDB</span><span>Excel</span><span>Power BI</span>
+          </div>
+        </article>
+        <article class="stack-card reveal">
+          <p class="stack-label">✦ Flujo de trabajo</p>
+          <div class="chip-list">
+            <span>Git</span><span>GitHub</span><span>VS Code</span><span>IntelliJ IDEA</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="proyectos">
+      <div class="section-heading reveal">
+        <p class="section-kicker">03 / Trabajo</p>
+        <h2>⊹ Proyectos seleccionados ⊹</h2>
+        <p class="section-description">
+          Proyectos donde he trabajado el problema, la experiencia y la implementación como partes de una misma solución.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card project-featured reveal">
+          <div class="project-preview rumbo-preview" aria-hidden="true">
+            <div class="mock-browser">
+              <div class="mock-top"><span></span><span></span><span></span></div>
+              <div class="rumbo-ui">
+                <div class="rumbo-sidebar">
+                  <strong>rumbo</strong>
+                  <i></i><i></i><i></i>
+                </div>
+                <div class="rumbo-main">
+                  <div class="route-head">
+                    <div><small>Ruta actual</small><strong>Camino al colegio</strong></div>
+                    <span>En ruta</span>
+                  </div>
+                  <div class="route-line">
+                    <b></b><b></b><b></b><b></b>
+                  </div>
+                  <div class="route-cards">
+                    <div></div><div></div><div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-topline">
+              <span class="project-index">01</span>
+              <span class="project-type">Aplicación web</span>
+            </div>
+            <h3>Rumbo</h3>
+            <p>
+              Plataforma para mejorar la coordinación del transporte escolar entre familias y conductores,
+              centralizando el estado del viaje, hitos, retrasos e incidencias.
+            </p>
+            <div class="project-tags">
+              <span>UX</span><span>Web</span><span>Requirements</span><span>GitHub</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/AIpaca-UPC/web-applications-project-report" target="_blank" rel="noreferrer">Project Report</a>
+              <a href="https://github.com/AIpaca-OS/landing-page" target="_blank" rel="noreferrer">Código</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-preview homear-preview" aria-hidden="true">
+            <div class="phone-shell">
+              <div class="phone-notch"></div>
+              <div class="ar-room">
+                <div class="wall wall-one"></div>
+                <div class="wall wall-two"></div>
+                <div class="ar-grid"></div>
+                <span class="scan-label">STRUCTURE CHECK</span>
+                <span class="scan-point p1"></span>
+                <span class="scan-point p2"></span>
+                <span class="scan-point p3"></span>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-topline">
+              <span class="project-index">02</span>
+              <span class="project-type">UX / Producto</span>
+            </div>
+            <h3>HomeAR</h3>
+            <p>
+              Concepto de producto enfocado en apoyar la autoconstrucción segura mediante realidad aumentada,
+              guías visuales y validaciones simples de elementos estructurales.
+            </p>
+            <div class="project-tags">
+              <span>UX Research</span><span>AR</span><span>Figma</span><span>Product Design</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-preview portfolio-preview" aria-hidden="true">
+            <div class="portfolio-mini">
+              <div class="mini-nav"><b>L</b><span></span><span></span><span></span></div>
+              <div class="mini-hero">
+                <small>Leonardo Lino</small>
+                <strong>Ingeniero de Software</strong>
+                <p></p><p></p>
+                <div><i></i><i></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-topline">
+              <span class="project-index">03</span>
+              <span class="project-type">Personal</span>
+            </div>
+            <h3>LinoDev</h3>
+            <p>
+              Este portafolio: una interfaz ligera, responsive y sin dependencias pesadas, diseñada para presentar
+              proyectos, herramientas y contacto de forma directa.
+            </p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Vercel</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/linolw/portafolio" target="_blank" rel="noreferrer">Repositorio</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="certificados">
+      <div class="section-heading reveal">
+        <p class="section-kicker">04 / Credenciales</p>
+        <h2>⊹ Certificados ⊹</h2>
+      </div>
+
+      <div class="credentials-grid">
+        <article class="credential reveal">
+          <span class="credential-mark">EN</span>
+          <div><strong>Linguaskill</strong><p>Inglés B1 · Certificación internacional</p></div>
+        </article>
+        <article class="credential reveal">
+          <span class="credential-mark">BI</span>
+          <div><strong>Power BI</strong><p>Análisis y visualización de datos</p></div>
+        </article>
+        <article class="credential reveal">
+          <span class="credential-mark">XL</span>
+          <div><strong>Microsoft Excel</strong><p>Herramientas para análisis y productividad</p></div>
+        </article>
+        <article class="credential reveal">
+          <span class="credential-mark">SC</span>
+          <div><strong>Scrum</strong><p>Fundamentos de trabajo ágil</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contacto">
+      <div class="contact-panel reveal">
+        <p class="section-kicker">05 / Contacto</p>
+        <h2>¿Hablamos?</h2>
+        <p>
+          Puedes encontrarme en GitHub y LinkedIn, o escribirme directamente por correo.
+        </p>
+
+        <div class="social-row">
+          <a class="social-button" href="https://github.com/linolw" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.21-3.37-1.21-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .08 1.53 1.06 1.53 1.06.9 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.64-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.3 9.3 0 0 1 12 6.98a9.3 9.3 0 0 1 2.5.35c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.35 4.8-4.58 5.06.36.32.68.95.68 1.92 0 1.39-.01 2.5-.01 2.84 0 .27.18.6.69.49A10.23 10.23 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z"/></svg>
+          </a>
+          <a class="social-button" href="https://www.linkedin.com/in/leonardolino-dev/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.5V19H3.5V8.5h3.44ZM5.22 3A2 2 0 1 1 5.2 7a2 2 0 0 1 .02-4ZM20.5 13v6h-3.43v-5.6c0-1.41-.5-2.37-1.75-2.37-.96 0-1.53.66-1.78 1.29-.09.22-.11.53-.11.85V19H10V8.5h3.43v1.44c.46-.72 1.27-1.75 3.1-1.75 2.26 0 3.97 1.51 3.97 4.81Z"/></svg>
+          </a>
+          <a class="social-button" href="mailto:linoeuros@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3V5Zm2 2v.5l7 5 7-5V7H5Zm14 10V10l-7 5-7-5v7h14Z"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Leonardo Lino</span>
+    <span>© <span id="year"></span></span>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
