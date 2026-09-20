@@ -14,6 +14,30 @@
 </head>
 
 <body>
+  <svg class="topography-bg" viewBox="0 0 900 900" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+    <g class="topo-layer topo-layer-a">
+      <path d="M-80 80C40 10 136 16 196 84s32 156 110 191 156-43 229 6 43 135 107 184 173 8 244 70 58 146 129 208"/>
+      <path d="M-70 145C39 89 115 95 157 148s29 119 88 148 121-30 179 9 42 100 92 140 137 20 194 71 50 112 112 159"/>
+      <path d="M-20 260C58 220 117 228 151 270s31 91 77 114 94-12 143 22 46 75 90 110 103 25 150 65"/>
+      <path d="M518-50c-66 55-80 111-37 155s111 33 145 85-12 116 34 159 120 13 162 57 30 100 84 140"/>
+      <path d="M625-48c-42 39-52 78-22 107s76 22 101 59-7 80 27 110 88 10 119 42"/>
+      <path d="M46 585c73-82 161-103 235-56s67 124 138 155 147-11 206 47 51 137 123 174"/>
+      <path d="M-28 658c92-96 195-119 282-65s83 143 165 178 169-8 239 57 64 151 145 189"/>
+      <path d="M-88 768c109-103 228-126 326-66s99 158 191 199 190-1 269 72"/>
+    </g>
+    <g class="topo-layer topo-layer-b">
+      <path d="M201-44c-19 81 31 128 103 130s106 44 91 101-91 71-105 133 50 102 118 99 112 33 112 91"/>
+      <path d="M255-27c-11 53 21 84 68 87s71 29 61 67-62 48-71 90 34 69 79 67"/>
+      <path d="M700 160c-82-14-130 24-140 90s-57 92-108 69-58-95-116-116-104 33-112 96"/>
+      <path d="M764 216c-54-7-84 19-90 61s-37 59-70 45-39-60-77-72"/>
+      <path d="M80 410c-55-7-91 18-102 66s17 87 67 99 71 50 51 90-72 43-89 87"/>
+      <path d="M104 454c-36-4-58 12-64 42s11 55 43 62 45 31 32 56"/>
+    </g>
+  </svg>
+
+  <div class="ambient-glow ambient-glow-one" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-two" aria-hidden="true"></div>
+
   <header class="site-header">
     <div class="header-inner">
       <a class="mark" href="#inicio" aria-label="Inicio">L</a>
@@ -202,15 +226,19 @@
     <div class="separator"></div>
 
     <section class="panel" id="proyectos">
-      <header class="panel-header">
-        <h2>Proyectos <sup>(3)</sup></h2>
+      <header class="panel-header panel-header-split">
+        <div>
+          <h2>Trabajo seleccionado <sup>(3)</sup></h2>
+          <p class="panel-subtitle">Proyectos y conceptos en distintos niveles de avance.</p>
+        </div>
+        <span class="section-orbit" aria-hidden="true"></span>
       </header>
 
       <article class="project-item">
         <button class="project-trigger" type="button" aria-expanded="true">
           <span class="icon-tile project-tile">R</span>
           <span class="project-heading">
-            <b>Rumbo</b>
+            <b>Rumbo <span class="status-pill status-progress">En desarrollo</span></b>
             <small>2026 · Aplicación web</small>
           </span>
           <span class="project-toggle">⌃⌄</span>
@@ -229,7 +257,7 @@
         <button class="project-trigger" type="button" aria-expanded="false">
           <span class="icon-tile project-tile">H</span>
           <span class="project-heading">
-            <b>HomeAR</b>
+            <b>HomeAR <span class="status-pill status-concept">Concepto UX</span></b>
             <small>2026 · UX / Producto</small>
           </span>
           <span class="project-toggle">⌃⌄</span>
@@ -244,7 +272,7 @@
         <button class="project-trigger" type="button" aria-expanded="false">
           <span class="icon-tile project-tile">L</span>
           <span class="project-heading">
-            <b>LinoDev</b>
+            <b>LinoDev <span class="status-pill status-live">En línea</span></b>
             <small>2026 · Personal</small>
           </span>
           <span class="project-toggle">⌃⌄</span>
@@ -262,25 +290,64 @@
     <div class="separator"></div>
 
     <section class="panel" id="certificados">
-      <header class="panel-header">
-        <h2>Certificaciones <sup>(4)</sup></h2>
+      <header class="panel-header panel-header-split">
+        <div>
+          <h2>Certificaciones <sup>(4)</sup></h2>
+          <p class="panel-subtitle">Credenciales que complementan mi perfil técnico.</p>
+        </div>
+        <div class="credential-legend" aria-hidden="true">
+          <i class="legend-blue"></i><i class="legend-violet"></i><i class="legend-green"></i>
+        </div>
       </header>
 
-      <div class="cert-item">
-        <span class="icon-tile cert-tile">EN</span>
-        <div><b>Linguaskill</b><small>Cambridge English · Nivel B1</small></div>
-      </div>
-      <div class="cert-item">
-        <span class="icon-tile cert-tile">BI</span>
-        <div><b>Power BI</b><small>Formación complementaria</small></div>
-      </div>
-      <div class="cert-item">
-        <span class="icon-tile cert-tile">XL</span>
-        <div><b>Microsoft Excel</b><small>Formación complementaria</small></div>
-      </div>
-      <div class="cert-item">
-        <span class="icon-tile cert-tile">SC</span>
-        <div><b>Scrum</b><small>Fundamentos de metodologías ágiles</small></div>
+      <div class="cert-grid">
+        <article class="cert-card cert-blue">
+          <div class="cert-card-top">
+            <span class="cert-symbol">EN</span>
+            <span class="cert-type">Idioma</span>
+          </div>
+          <div class="cert-card-body">
+            <b>Linguaskill</b>
+            <p>Cambridge English</p>
+            <div class="cert-meta"><span>Nivel B1</span><span>Internacional</span></div>
+          </div>
+        </article>
+
+        <article class="cert-card cert-violet">
+          <div class="cert-card-top">
+            <span class="cert-symbol">BI</span>
+            <span class="cert-type">Datos</span>
+          </div>
+          <div class="cert-card-body">
+            <b>Power BI</b>
+            <p>Visualización y análisis de datos</p>
+            <div class="cert-meta"><span>Certificado</span><span>Business Intelligence</span></div>
+          </div>
+        </article>
+
+        <article class="cert-card cert-green">
+          <div class="cert-card-top">
+            <span class="cert-symbol">XL</span>
+            <span class="cert-type">Productividad</span>
+          </div>
+          <div class="cert-card-body">
+            <b>Microsoft Excel</b>
+            <p>Herramientas de análisis y gestión</p>
+            <div class="cert-meta"><span>Certificado</span><span>Office</span></div>
+          </div>
+        </article>
+
+        <article class="cert-card cert-amber">
+          <div class="cert-card-top">
+            <span class="cert-symbol">SC</span>
+            <span class="cert-type">Agilidad</span>
+          </div>
+          <div class="cert-card-body">
+            <b>Scrum</b>
+            <p>Fundamentos de trabajo ágil</p>
+            <div class="cert-meta"><span>Formación</span><span>Agile</span></div>
+          </div>
+        </article>
       </div>
     </section>
 
