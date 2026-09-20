@@ -8,6 +8,19 @@
   const roleFlip = document.getElementById("role-flip");
   const live = document.getElementById("terminal-live");
 
+  const topo = document.querySelector(".topography-bg");
+  let pointerRaf = 0;
+  window.addEventListener("pointermove", (event) => {
+    if (!topo || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    if (pointerRaf) return;
+    pointerRaf = requestAnimationFrame(() => {
+      pointerRaf = 0;
+      const x = (event.clientX / window.innerWidth - 0.5) * 8;
+      const y = (event.clientY / window.innerHeight - 0.5) * 8;
+      topo.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+    });
+  });
+
   const savedTheme = localStorage.getItem("theme");
   if (savedTheme === "light" || savedTheme === "dark") {
     root.dataset.theme = savedTheme;
